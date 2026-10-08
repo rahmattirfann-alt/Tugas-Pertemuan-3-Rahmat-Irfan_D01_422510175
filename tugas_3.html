@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Kegiatan Mahasiswa</title>
+    <link rel="stylesheet" href="tugas_3.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Portal Kegiatan Mahasiswa</h1>
+        <nav class="main-nav" aria-label="Navigasi Utama">
+          <a href="#beranda">Beranda</a>
+          <a href="#kegiatan">Kegiatan</a>
+          <a href="#jadwal">Jadwal</a>
+          <a href="#pendaftaran">Pendaftaran</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="beranda" class="hero">
+        <h2>Selamat Datang di Portal Kegiatan</h2>
+        <p>
+          Temukan dan ikuti berbagai kegiatan kemahasiswaan untuk mengembangkan
+          potensi diri dan memperluas jaringan.
+        </p>
+      </section>
+
+      <section id="kegiatan">
+        <h2>Daftar Kegiatan Terbaru</h2>
+        <div class="card-container">
+          <article class="card">
+            <h3>Lomba Karya Tulis Ilmiah</h3>
+            <p>
+              Kompetisi menulis karya ilmiah tingkat nasional untuk mahasiswa
+              aktif.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Seminar Kepemimpinan</h3>
+            <p>
+              Seminar inspiratif untuk membentuk jiwa kepemimpinan mahasiswa di
+              era digital.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="jadwal">
+        <h2>Jadwal Pelaksanaan</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Nama Kegiatan</th>
+              <th scope="col">Tanggal</th>
+              <th scope="col">Lokasi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Lomba Karya Tulis Ilmiah</td>
+              <td>15 Nov 2026</td>
+              <td>Gedung A</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Workshop Web Development</td>
+              <td>20 Nov 2026</td>
+              <td>Lab Komputer</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Seminar Kepemimpinan</td>
+              <td>25 Nov 2026</td>
+              <td>Auditorium</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="pendaftaran">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="#" method="post">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" required />
+
+          <label for="nim">NIM</label>
+          <input
+            type="text"
+            id="nim"
+            name="nim"
+            minlength="9"
+            maxlength="12"
+            pattern="[0-9]{9,12}"
+            required
+          />
+
+          <label for="prodi">Program Studi</label>
+          <select id="prodi" name="prodi" required>
+            <option value="">-- Pilih Program Studi --</option>
+            <option value="ti">Teknik Informatika</option>
+            <option value="si">Sistem Informasi</option>
+          </select>
+
+          <label for="kegiatan-pilihan">Pilih Kegiatan</label>
+          <select id="kegiatan-pilihan" name="kegiatan" required>
+            <option value="">-- Pilih Kegiatan --</option>
+            <option value="lkti">Lomba Karya Tulis Ilmiah</option>
+            <option value="web">Workshop Web Development</option>
+            <option value="seminar">Seminar Kepemimpinan</option>
+          </select>
+
+          <label for="alasan">Alasan Mengikuti</label>
+          <textarea id="alasan" name="alasan" rows="4" required></textarea>
+
+          <button type="submit" class="button">Kirim Pendaftaran</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Portal Kegiatan Mahasiswa</p>
+      </div>
+    </footer>
+  </body>
+</html>
